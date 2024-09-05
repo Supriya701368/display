@@ -44,17 +44,18 @@ function updateChart() {
   const averages = students.map(student => student.average);
   
   const colors = [
-    'rgba(255, 99, 132, 0.6)',
-    'rgba(54, 162, 235, 0.6)',
-    'rgba(255, 206, 86, 0.6)',
-    'rgba(75, 192, 192, 0.6)',
-    'rgba(153, 102, 255, 0.6)',
-    'rgba(255, 159, 64, 0.6)'
+    "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"  
   ];
-  
+
   const barColors = names.map((_, index) => colors[index % colors.length]);
-  const borderColors = names.map((_, index) => colors[index % colors.length].replace('0.6', '1'));
-  
+const borderColors = names.map((_, index) => colors[index % colors.length].replace('0.6', '1'));
+
+  const barCanvas = document.getElementById('barChartCanvas');
+  const pieCanvas = document.getElementById('pieChartCanvas');
 
   if (!barCanvas || !pieCanvas) {
     console.error('Canvas element not found');
