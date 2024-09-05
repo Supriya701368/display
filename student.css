@@ -28,3 +28,12 @@ canvas {
 body{
     background-color: rgb(22, 22, 22);
 }
+h3{
+    line-height: 2.2;
+}
+.col-md-3 {
+    border-radius: 20px;
+    box-shadow: 6 4px 8px rgba(143, 116, 116, 0.397); /* Optional for better effect */
+}
+
+
